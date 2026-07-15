@@ -1,0 +1,26 @@
+fastapi>=0.111.0
+uvicorn>=0.30.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# LangGraph + LangChain
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-groq>=0.1.0
+
+# Optional free-tier fallback providers (used automatically only if their
+# API key env var is set — see backend/.env.example). Kept as hard deps
+# here so fallback "just works" without an extra install step; each is
+# lightweight and has no native/compiled requirements.
+langchain-openai>=0.2.0          # used for Cerebras + OpenRouter (OpenAI-compatible)
+langchain-google-genai>=2.0.0    # used for Google Gemini free tier
+
+# Tools
+ddgs>=9.0.0                      # maintained successor to duckduckgo-search
+python-docx>=1.1.0
+openpyxl>=3.1.0
+
+# Database
+supabase>=2.4.0

@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: ai-agent-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_FAST_MODEL
+        value: openai/gpt-oss-20b
+      - key: GROQ_QUALITY_MODEL
+        value: openai/gpt-oss-120b
+      - key: GROQ_QUALITY_MODEL_BACKUP
+        value: llama-3.3-70b-versatile
+      - key: CEREBRAS_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: MAX_HISTORY_TURNS
+        value: "30"
