@@ -24,6 +24,19 @@ Supabase (chat history — free PostgreSQL)
 
 ---
 
+---
+![Project Home](images/aia2.png)
+---
+---
+![Project Home](images/aia1.png)
+---
+---
+![Project Home](images/aia3.png)
+---
+
+
+
+
 ## What changed in this version
 
 This started from a single-agent build that had a real bug plus some stale
